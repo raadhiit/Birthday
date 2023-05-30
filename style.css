@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  /* background: #129292; */
+  background: url('img/collage.jpg');
+  background-size:contain;
+  background-repeat:initial;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: serif;
+}
+
+.card {
+  background: #EEE9E9;
+  color: black;
+  border-radius: 4px;
+  height: 70vh;
+  width: 90vw;
+  box-shadow: 0 3px 6px rgba(190, 190, 190, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
+  text-align: justify;
+  /* font-size: 12px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow-y: auto; */
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  
+}
+@media only screen and (max-height: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  
+}
+
+.card-text {
+  /* padding: 1em; */
+  font-size: 16px;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+
+.btn {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
